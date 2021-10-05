@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f2d977f4ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+    <title>SHOPI-Q</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Cart (2 items)</h1>
+            <div class="item item-1">
+                <img src="photo.jpg" alt="" class="first">
+                <div class="content">
+                    <h3><span style="color: orangered;">Addidas</span> Shoes</h3>
+                    <p class="child">SHOES: WHITE</p>
+                    <p class="child">COLOR: WHITE</p>
+                    <p class="child">SIZE: M</p>
+                    <div class="buttons">
+                        <button class=" trash"><i class="far fa-trash-alt"></i></button>
+                        <p class="p">REMOVE ITEM</p>
+                        <button class="heart trash"><i class="far fa-heart"></i></button>
+                        <p class="p">MOVE TO WISHLIST</p>
+                    </div>
+                    <div class="right">
+                        <button class="btn_plus  btn" onclick="icreaseBtn1()"><i class="fas fa-plus"></i></button>
+                        <input type="number" name="" id="first_input" value="0">
+                        <button class="btn_minus btn" onclick="decreaseBtn1()"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <p id="price">$<span>0.00</span></p>
+                </div>
+            </div>
+            <div class="item item-1">
+                <img src="download.jpg" alt="">
+                <div class="txt">
+                    <h3><span style="color: orange;">Nike</span> Slipper</h3>
+                    <p class="child">SLIPPER: BLACK</p>
+                    <p class="child">COLOR:BLACK</p>
+                    <p class="child">SIZE: M</p>
+                    <div class="buttons">
+                        <button class=" trash"><i class="far fa-trash-alt"></i></button>
+                        <p class="p">REMOVE ITEM</p>
+                        <button class="heart trash"><i class="far fa-heart"></i></button>
+                        <p class="p">MOVE TO WISHLIST</p>
+                    </div>
+                    <div class="right">
+                        <button class="btn_plus  btn" onclick="increaseBtn2()"><i class="fas fa-plus"></i></button>
+                        <input type="number" name="" id="Second_input" value="0">
+                        <button class="btn_minus btn" onclick="decreaseBtn2()"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <p id="price">$<span class="n">0.00</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="result_cont">
+            <h4>The Total Amount Of</h4>
+            <p>Product Amount</p>
+            <span class="amt">
+               0.00
+            </span>
+            <p>Shipping Charge</p>
+            <span class="Shipping">
+               50
+            </span>
+            <hr>
+            <p>The total amount of (including VAT)</p>
+            <span class="last">
+                0
+            </span>
+            <button id="checkOut">CHECKOUT</button>
+            <h6> Note: All includes in Dollars</h6>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

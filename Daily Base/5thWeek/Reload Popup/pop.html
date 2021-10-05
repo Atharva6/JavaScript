@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f2d977f4ee.js" crossorigin="anonymous"></script>
+    <title>Automatically Popup Page when Reload</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'PT Sans Narrow', sans-serif;
+        }
+        .container{
+            background: #4834d4;
+            height: 100vh;
+            position: relative;
+        }
+        .content{
+            background: #fff;
+            height: 50vh;
+            width: 40vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 6px;
+            display: none;
+        }
+        .content h1{
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 24px;
+            display: inline-block;
+            margin-left: 154px;
+        }
+        hr{
+            margin-left: 12px;
+            width: 95%;
+            border: 2px solid black;
+            background: black;
+            margin-top: 9px;
+            border-radius: 32%;
+        }
+        .content p{
+            padding: 10px;
+            word-spacing: 5px;
+        }
+        button#btn{
+           margin-left: 42%;
+           padding: 8px 18px;
+           border: 2px solid black;
+           outline: none;
+           margin-top: 16px;
+        }
+        button#btn:hover{
+            border: 2px solid orange;
+            color: #fff;
+            background: orange;
+        }
+        button#icon{
+            background: none;
+            margin-left: 132px;
+            margin-top: -86px;
+            display: inline-block;
+            padding: 2px 6px;
+            outline: none;
+            border: none;
+            font-size: 22px;
+        }
+        button#icon:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content"><h1>This is the Title</h1><button id="icon"><i class="fas fa-times"></i></button><hr><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim provident aperiam tenetur vel, quisquam delectus rem autem totam labore aliquid, aliquam fugit impedit laborum esse repellendus porro, modi saepe Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum, odio veritatis dolore quos blanditiis illum inventore modi quibusdam sint! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, nam?</p>
+        <button id="btn">Let's Go</button>
+    </div>
+    </div>
+    <script>
+        window.addEventListener('load', ()=>{
+            let content = document.querySelector('.content');
+            content.style.display = "block";
+        })
+        let Icon_btn = document.getElementById('icon').addEventListener('click', ()=>{
+            content = document.querySelector('.content');
+            content.style.display = "none";
+        })
+    </script>
+</body>
+</html>

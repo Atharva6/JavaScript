@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+button#btn{
+    margin-left: 83%;
+    margin-top: 2%;
+    padding: 5px;
+    background: rebeccapurple;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 4%;
+    display: inline-block;
+}
+.op{
+    background: rebeccapurple;
+    padding: 96px;
+    margin-left: 85%;
+    border-radius: 10px;
+    margin-top: -39%;
+    margin-right: 14px;
+    transition: all .4s ease-in-out;
+    display: none;
+    animation: move 1.5s linear forwards;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
+}
+@keyframes move{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: 1090px;
+    }
+}
+.op.active{
+    display: block;
+}
+#btn.active{
+    display: none;
+}
+ul li {
+    color: #fff;
+    margin-top: 17px;
+    font-size: 33px;
+    margin-left: -31px;
+}
+ul{
+    list-style-type: none;
+}

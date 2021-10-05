@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCounter - For Youtube.</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #576574;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            box-shadow: 0px 5px 10px 0px #f19494;
+            height: 64px;
+        }
+        .container h1{
+            color: orangered;
+            text-align: center;
+            padding-top: 10px;
+            /* animation: head infinite 4s ease-in-out; */
+        }
+        @keyframes head{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        .logo{
+            display: block;
+        }
+        .logo img{
+            border-radius: 107px;
+            margin-left: 545px;
+            margin-top: 51px;
+        }
+        .content{
+            /* border: 3px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 12px;
+            height: 50vh;
+        }
+        .content p{
+            font-size: 80px;
+            padding-bottom: 62px;
+            margin-left: -34px;
+            color: rgb(240, 149, 149);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>iCounter - For Youtube</h1>
+    </div>
+    <div class="logo">
+        <img src="logo.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="yt">
+            <p class="count">0</p>
+            <p class="para"></p>
+        </div>
+    </div>
+    <script src="Counter.js"></script>
+</body>
+</html>

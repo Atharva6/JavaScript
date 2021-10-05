@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title> Songs </title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Specifications</a></li>
+            <li><a href="#">Connect</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>The <br> Real <br> Sound</h1>
+        <div class="right">
+            <p>Click to Play</p>
+            <img src="img/play.png" id="icon" onclick = "togglehide()" alt="play button">
+        </div>
+    </main>
+    <audio id="mySong" src="./song.mp3" type="audio/mp3"></audio>
+</body>
+</html>

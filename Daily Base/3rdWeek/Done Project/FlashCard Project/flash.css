@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    background: #55efc4;
+}
+.content{
+    position: absolute;
+    height: 88vh;
+    width: 68vw;
+    background: #2d3436;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+}
+.content p{
+    margin-left: 21px;
+    margin-top: 16px;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 200;
+}
+.content button{
+    margin-left: 23px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.content button:hover{
+    color: orange;
+    border: 2px solid orange;
+}
+.output{
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.output h3{
+    font-weight: 400;
+    color: orangered;
+    margin-top: 8px;
+}
+.output textarea{
+    border: 2px solid #fff;
+    border-radius: 4px;
+    height: 67px;
+    margin-top: 11px;
+}
+.output .Save{
+    margin-left: -1px;
+    padding: 9px;
+    padding-left: 22px;
+    padding-right: 23px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.output .Save:hover{
+    border: 2px solid green;
+    color: green;
+}
+.output h3#Ans{
+    color: palegreen;
+}
+.txt{
+    margin-left: 135px;
+    margin-top: -301px;
+}
+.txt h2{
+    margin-left: 24px;
+    color: #000;
+    font-size: 23px;
+}
+.txt p{
+    display: none;
+}
+.txt button.firstBtn{
+    border: none;
+    background: none;
+    color: blue;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.shown{
+    width: 29%;
+    padding: 4px;
+    border-radius: 10px;
+    margin-top: 48px;
+    margin-left: 24px;
+    background: rgb(233, 229, 184);
+}
+.txt button.Edit, button.Delete{
+    padding: 7px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.txt button.Edit:hover{
+    border: 2px solid seagreen;
+    color: seagreen;
+}
+.txt button.Delete:hover{
+    border: 2px solid orange;
+    color: orange;
+}

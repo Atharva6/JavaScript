@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.container{
+    background-image: radial-gradient( circle farthest-corner at 10.2% 55.8%,  rgba(252,37,103,1) 0%, rgba(250,38,151,1) 46.2%, rgba(186,8,181,1) 90.1% );
+    position: relative;
+    height: 100vh;
+}
+.quiz-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.skeleton{
+    background: #fff;
+    padding: 0px;
+    padding-left: 135px;
+    padding-right: 127px;
+    border-radius: 4px;
+    box-shadow: 0 9px 7px 0 #000;
+}
+ul{
+    list-style-type: none;
+}
+.skeleton .head h2{
+    margin-left: -71px;
+    margin-top: -62px;
+    padding-top: 15px;
+}
+ul li{
+    margin-left: -83px;
+    margin-top: 13px;
+}
+.footer button#sub{
+    outline: none;
+    border: none;
+    margin-top: 31px;
+    margin-left: 35px;
+    padding: 13px;
+    width: 79.4%;
+    padding-top: 6px;
+    background-image: radial-gradient( circle farthest-corner at 10.2% 55.8%, rgba(252,37,103,1) 0%, rgba(250,38,151,1) 46.2%, rgba(186,8,181,1) 90.1% );
+    font-size: 20px;
+    color: #fff;
+}

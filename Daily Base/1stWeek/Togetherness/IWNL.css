@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    height: 100vh;
+}
+.nav{
+    height: 74px;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 23px;
+}
+input[type = "radio"]{
+    margin-left: 34px;
+}
+input[type = "radio"]#red{
+    margin-right: -247px;
+}
+.labels{
+    display: flex;
+    align-items: center;
+    width: 26%;
+}
+.nav .nav-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-content h1{
+    color: #000;
+    font-size: 25px;
+}
+.nav-content span.color{
+    color: orangered;
+}
+select{
+    padding: 4px;
+    margin-left: 10px;
+    border: 2px solid;
+    border-radius: 4px;
+}
+.middle{
+    position: relative;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 6px;
+}
+.quote h2{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    font-size: 40px;
+    color: #fff;
+}
+hr{
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    border: 1px solid;
+    border-radius: 75px;
+    background: #000;
+}
+.quote p#para{
+    margin-left: 69px;
+    border: 2px solid;
+    width: 87.4%;
+    padding: 89px;
+    height: 50vh;
+    background: #fff;
+    color: #FF416C;
+    padding-left: 14%;
+    font-size: 50px;
+}
+p#author{
+    margin-left: 74%;
+    margin-top: -7%;
+    font-size: 27px;
+}
+button#new{
+    width: 87%;
+    margin-left: 71px;
+    padding: 11px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    margin-top: 88px;
+    border-radius: 5px;
+}
+button#new:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+button#fav{
+    font-size: 22px;
+    background: none;
+    margin-left: 125px;
+    border: none;
+    outline: none;
+    padding-top: 7px;
+    color: rgb(224, 221, 221);
+}

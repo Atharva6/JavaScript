@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background: #a29bfe;
+    position: relative;
+}
+.button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.button button#start_btn{
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 24px;
+    background: black;
+    color: #fff;
+}
+.button button#start_btn:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+.Rules{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.Rules.show{
+    display: block;
+} 
+.main-sec.display{
+    display: block;
+}
+.box{
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+.box h3{
+    margin-top: -25px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+.box ul li{
+    margin-top: 16px;
+    list-style-type: none;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+button.btn{
+    padding: 7px;
+    margin-top: 16px;
+}
+button#exit_btn{
+    background-color: #fff;
+    border: 2px solid #00a8ff;
+    margin-left: 229px;
+    margin-bottom: -20px;
+    color: #00a8ff;
+    border-radius: 5px;
+    outline: none;
+}
+button#exit_btn:hover{
+    background-color: #00a8ff;
+    color: #fff;
+    background-color: #0097e6;
+}
+button#continue_btn{
+    outline: none;
+    color: #fff;
+    background-color: #00a8ff;
+    border: 2px solid #00a8ff;
+    border-radius: 5px;
+}
+button#continue_btn:hover{
+    background-color: #0097e6;
+}
+hr{
+    border: 2px solid #7f8fa6;
+    background-color: #7f8fa6;
+    border-radius: 100%;
+}
+.main-sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#4cd137;
+    padding: 124px;
+    border-radius: 179px;
+    display: none;
+}
+.text h2{
+    text-align: center;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+.input{
+    text-align: center;
+}
+.input input{
+    font-size: 28px;
+    width: 21%;
+    margin-top: 10%;
+    padding-left: 10px;
+    padding: 6%;
+    box-shadow: 0px 15px 30px 0px #fff;
+    border: 2px solid #353b48;
+    border-radius: 6px;
+}
+.output input{
+    margin-left: 32%;
+    font-size: 206%;
+    width: 37%;
+    margin-top: 20px;
+    padding-right: 10%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+.output input:focus{
+    background: #ff7979;
+    color: #fff;
+}
+button#Check{
+    border-radius: 3px;
+    margin-top: 34px;
+    margin-left: 169px;
+    display: block;
+    margin-bottom: -94px;
+    padding: 4px;
+    border: 2px solid black;
+    padding: 8px;
+}
+button#Check:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+
+

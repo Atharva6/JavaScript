@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 41px 73px;
+    height: 75vh;
+    position: relative;
+    background-color: #60a3bc;
+    border-radius: 8px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container h3{
+    text-align: center;
+}
+.container input{
+    margin-left: -87px;
+    width: 140%;
+    height: 8vh;
+    border-radius: 16px;
+    border: 2px solid black;
+}
+.container input:hover{
+    border: 3px solid rgb(115, 115, 238);
+}
+button#mybtn{
+    padding: 6px 23px;
+    margin-left: 178px;
+    background-color: orangered;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+p#para{
+    /* border: 2px solid red; */
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(236, 174, 152);
+    font-size: 30px;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    background: #8f94fb;
+}
+/* .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.content h1{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 140px;
+}
+.content h1 span.span{
+    color: #ff6b6b;
+}
+.content input{
+    margin-left: 31%;
+    margin-top: 40px;
+    width: 38%;
+    padding: 9px;
+    outline: none;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.content input:focus{
+    border: 2px solid orangered;
+}
+#gram,
+#Kilograms,
+#Ounces{
+    margin-left: 396px;
+    margin-top: 19px;
+    padding: 8px;
+    width: 38%;
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+#Kilograms{
+    background-color: red;
+}
+#Ounces{
+    background-color: green;
+}

@@ -1,0 +1,1871 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+.container{
+    height: 100vh;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.head{
+    height: 64px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+    width: 100%;
+    opacity: 0.95;
+}
+.head h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+.head h1 span{
+    color: orangered;
+}
+.inpbtns{
+    display: flex;
+}
+.head input{
+    display: none;
+    padding: 3px;
+    padding-left: 5px;
+}
+input:focus{
+    border: 2px solid blueviolet;
+}
+.head input.active{
+    display: block;
+}
+button#search{
+    padding-left: 3px;
+    padding-right: 3px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff
+}
+button#search:hover{
+    color: orangered;
+}
+                                                    /* Body Styling */
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 26px;
+    /* display: none; */
+}
+.body.c{
+    display: none;
+}
+.body img{
+    width: 337px;
+    height: 354px;
+}
+.apps,
+.simple,
+.Games{
+    box-shadow: 0 5px 10px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+button#view,
+button#learn,
+button#laugh{
+    background: none;
+    width: 50%;
+    padding: 10px;
+    margin-top: -5px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #0F2027;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+button.favorite{
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+    margin-top: -4px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+button.favorite:hover{
+    background: #fff;
+    color: orangered;
+}
+                                                    /* Form Styling */
+.frm{
+    height: 69.5vh;
+    background: #fff;
+    position: relative;
+    margin-top: 23px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 5px;
+    display: none;
+}
+.frm.current{
+    display: block;
+}
+.h{
+    background: blueviolet;
+    height: 11vh;
+    margin-top: -28px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.h h2{
+    text-align: center;
+    padding: 9px;
+    color: #ffff;
+    font-size: 35px;
+}
+.b .username{
+    width: 74%;
+    margin-left: 61px;
+    border-bottom: 2px solid grey;
+}
+.b .password{
+    width: 74%;
+    margin-left: 61px;
+    border-bottom: 2px solid grey;
+}
+.b input{
+    width: 75%;
+    margin-left: 8px;
+    margin-top: 47px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+}
+button#delete{
+    margin-left: 100%;
+    padding: 3px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    margin-top: -9px;
+}
+button#login{
+    margin: -1px 60px;
+    width: 75%;
+    padding: 10px;
+    margin-top: 27px;
+    border-radius: -1%;
+    outline: none;
+    border: 2px solid;
+    background: none;
+    font-size: 20px;
+}
+button#login:hover{
+    background: rebeccapurple;
+    color: #fff;
+    border: 2px solid rebeccapurple;
+}
+.f p{
+    margin-top: 10px;
+    text-align: center;
+}
+.f p a{
+    text-decoration: none;
+}
+a.a{
+    text-decoration: none;
+    margin-top: 19px;
+    display: inline-block;
+    margin-left: 60px;
+    color: rebeccapurple;
+}
+                                                    /* Foot Styling */
+.foot{
+    height: 64px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+.foot .date h3,
+.foot .form h3{
+    background: #fff;
+    color: orangered;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+h3#heading-3{
+    cursor: pointer;
+}
+
+                                                    /* Main Sec */
+.main-sec{
+    height: 72.2vh;
+    background: #fff;
+    margin-top: -1px;
+    margin-left: 68px;
+    margin-right: 72px;
+    padding-bottom: 44px;
+    margin-bottom: 38px;
+    margin-bottom: -32px;
+    display: none;
+}
+.main-sec.op{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4,
+.sec-5,
+.sec-6,
+.sec-7,
+.sec-8,
+.sec-9,
+.sec-10{
+    width: 17.5%;
+    border: 2px solid;
+    padding-bottom: 7px;
+}
+.main-sec img{
+    width: 196px;
+    height: 134px;
+}
+button#click,
+button#notes,
+button#clicker,
+button#clicked,
+button#clicken,
+button#joker,
+button#news,
+button#dog,
+button#quiz,
+button#pubg{
+    border: 2px solid;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+button#click:hover,
+button#notes:hover,
+button#clicker:hover,
+button#clicked:hover,
+button#clicken:hover,
+button#joker:hover,
+button#news:hover,
+button#dog:hover,
+button#quiz:hover,
+button#pub:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+button#ff{
+    background: none;
+    border: none;
+    outline: none;
+}
+button#times{
+    background: none;
+    margin-left: 94%;
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    display: none;
+}
+button#times:hover{
+    color: orangered;
+}
+#times.cur{
+    display: block;
+}
+                                                    /* Apps Styling */
+/* App 1 */
+
+.App1{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+}
+.App1.iwnl{
+    display: block;
+}
+.App1 h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 37px;
+}
+.App1 input{
+    margin-left: 239px;
+    width: 59%;
+    margin-top: 6px;
+    font-size: 20px;
+    padding: 3px;
+    padding-left: 14px;
+    border: 2px solid blueviolet;
+}
+.App1 button#add{
+    margin-top: -1px;
+    padding: 6px;
+    padding-left: 11px;
+    padding-right: 12px;
+    display: inline-block;
+    padding-top: 8px;
+    border: 2px solid orange;
+    color: orange;
+    background: none;
+    outline: none;
+}
+.App1 hr{
+    border-radius: 100%;
+    background: #000;
+    border: 1px solid;
+    margin-top: 10px;
+    width: 71%;
+    margin-left: 198px;
+}
+.tasks{
+    margin-left: 240px;
+    display: none;
+}
+.tasks.act{
+    display: block;
+}
+.task{
+    margin-left: 240px;
+    display: none;
+}
+.task.activ{
+    display: block;
+}
+.ever{
+    box-shadow: 0 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 239px;
+    width: 59%;
+    margin-top: 10px;
+    padding-left: 4px;
+    padding-right: 7px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    color: orange;
+    cursor: pointer;
+}
+button.trash{
+    padding: 0px;
+    background: none;
+    border: none;
+    color: orangered;
+    cursor: pointer;
+}
+.para.completed{
+    text-decoration: line-through;
+    color: #000;
+}
+button.exit{
+    margin-left: 93%;
+    margin-top: 256px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid;
+    color: #000;
+    font-size: 18px;
+}
+button.exit:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+.fav_btn.turulub{
+    color: #ff7979;
+}
+/* App 2 */
+.App2{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+}
+.App2.rock{
+    display: block;
+}
+.App2 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.App2 input{
+    margin-left: 248px;
+    margin-top: 9px;
+    width: 52%;
+    font-size: 21px;
+    padding-left: 11px;
+    border: 2px solid;
+    padding: 6px;
+}
+.App2 button#note_add{
+    margin-left: -74px;
+    padding: 7px;
+    margin-top: 5px;
+    display: inline-block;
+    padding-top: 11px;
+    padding-left: 25px;
+    padding-right: 28px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.App2 button#note_add:hover{
+    color: orangered;
+}
+.App2 hr{
+    border-radius: 100%;
+    background: #000;
+    border: 1px solid;
+    margin-top: 10px;
+    width: 71%;
+    margin-left: 157px;
+}
+.ignore{
+    margin-left: 248px;
+    color: orangered;
+    margin-top: 4px;
+    font-size: 22px;
+}
+div.BGMI{
+    margin-left: 247px;
+    margin-top: 3px;
+}
+.BGMI hr{
+    border-radius: 100%;
+    background: orange;
+    border: 1px solid orange;
+    margin-top: 1px;
+    width: 12%;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+/* App3 */
+.App3{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+    border-radius: 3px;
+}
+.App3.scissor{
+    display: block;
+}
+.App3 h1{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 30px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.App3 .box{
+    height: 60vh;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 1px;
+    border-radius: 15px;
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box h2{
+    padding: 77px;
+}
+.box p{
+    margin-left: 86%;
+    margin-top: -27px;
+    background: #fff;
+    width: 7%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+}
+button#exit_b{
+    margin-top: 87px;
+    margin-left: 1068px;
+}
+button.gen{
+    margin-top: -30px;
+    display: block;
+    margin-left: 151px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: none;
+    outline: none;
+    border: 2px solid;
+    font-size: 20px;
+}
+button.gen:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+/* App4 */
+.App4{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+}
+.App4.paper{
+    display: block;
+}
+.App4 h1{
+    text-align: center;
+    padding-top: 10px;
+    color: orange;
+    font-size: 35px;
+}
+.App4 input{
+    margin-left: 20%;
+    width: 58%;
+    margin-top: 22px;
+    padding: 6px;
+    font-size: 18px;
+    border: 2px solid orangered;
+    color: rebeccapurple;
+    outline: none;
+}
+.App4 button#mess_add{
+    padding: 9px;
+    border: 2px solid;
+    background: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.App4 button#special{
+    padding: 9px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 21px;
+}
+.App4 .content{
+    margin-left: 20%;
+}
+.content h2{
+    margin-left: 27%;
+    margin-top: 1px;
+}
+.content p.para{
+    color: orange;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+.content p{
+    margin-left: 31%;
+    margin-top: 2px;
+}
+button#exit_op{
+    margin-top: 168px;
+}
+.everything .favorite{
+    margin-left: 243px;
+    color: greenyellow;
+}
+/* App5 */
+.App5{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+}
+.App5.tic{
+    display: block;
+}
+.App5 h1{
+    text-align: center;
+    padding-top: 98px;
+    color: orangered;
+    cursor: pointer;
+}
+.App5 span{
+    text-align: center;
+    padding-top: 5px;
+    background: #000;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputs{
+    width: 18%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 41%;
+}
+.App5 input.pop{
+    font-size: 20px;
+    width: 17%;
+    border: 2px solid;
+    padding: 3px;
+    padding-left: 7px;
+}
+.App5 input.no{
+    margin-left: 241px;
+    width: 60%;
+    margin-top: 14px;
+    font-size: 25px;
+    padding-left: 11px;
+    border: 2px solid;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+button#check{
+    margin-left: 360px;
+    margin-top: 7px;
+    padding: 5px;
+    padding-left: 27px;
+    padding-right: 28px;
+    border: 2px solid;
+    outline: none;
+    background: none;
+    font-size: 20px;
+}
+button#check:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+button#next{
+    margin-left: 259px;
+    margin-top: 7px;
+    padding: 5px;
+    padding-left: 27px;
+    padding-right: 28px;
+    border: 2px solid;
+    outline: none;
+    background: none;
+    font-size: 20px;
+}
+button#next:hover{
+    border: 2px solid greenyellow;
+    color: greenyellow;
+}
+/* App6 */
+.App6{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    display: none;
+}
+.App6.tac{
+    display: block;
+}
+.App6 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #353b48;
+    padding: 8px;
+}
+.App6 h1 span{
+    color: orangered;
+    margin-left: 4px;
+    text-transform: uppercase;
+}
+.App6 h2{
+    padding: 103px;
+    font-size: 38px;
+    color: rebeccapurple;
+}
+.App6 button#Joke{
+    margin-left: 843px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 2px solid;
+    outline: none;
+    background: none;
+    font-size: 21px;
+    border-radius: 5px;
+    margin-top: 34px;
+    display: inline-block;
+    margin-bottom: -1px;
+}
+button#Joke:hover{
+    border: 2px solid green;
+    color: green;
+}
+button#exit_c{
+    margin-left: 93%;
+    margin-top: -59px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid;
+    color: #000000;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+}
+button#exit_c:hover{
+    border: 2px solid red;
+    color: red;
+}
+/* App7 */
+.App7{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+}
+.App7.toe{
+    display: block;
+}
+.App7 h1{
+    text-align: center;
+    padding: 3px;
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+    border-radius: 3px;
+    font-size: 30px;
+}
+.App7 h1 span{
+    color: #fff;
+}
+.App7 .NEWS{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+}
+.NEWS .news{
+    height: 46vh;
+    width: 18vw;
+    margin-top: 45px;
+    border-radius: 4px;
+    border: 2px solid;
+    margin-right: 9px;
+    margin-left: 4px;
+}
+.news img{
+    height: 67%;
+    width: 100%;
+    border-radius: 2px;
+}
+.news h5{
+    margin-left: 157px;
+    font-weight: 500;
+}
+.news h4{
+    margin-left: 4px;
+}
+.news a{
+    margin-left: 4px;
+    text-decoration: none;
+}
+/* App8 */
+.App8{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+}
+.App8.battle{
+    display: block;
+}
+.App8 h1{
+    padding: 5px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.App8 h1 span{
+    color: orange;
+    margin-right: 4px;
+}
+.App8 .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13px;
+    padding: 9px;
+    background: #a8ff78;  
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78); 
+    background: linear-gradient(to right, #78ffd6, #a8ff78); 
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+select{
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 2px;
+}
+.App8 .output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 8px;
+}
+.App8 #output .slide{
+    background-position: center;
+    width: 298px;
+    height: 272px;
+    border-radius: 3px;
+    margin-left: 37%;
+    margin-top: 15px;
+}
+/* App9 */
+.App9{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;
+}
+.App9.ground{
+    display: block;
+}
+.App9 .quiz-container{
+    padding: 79px;
+    box-shadow: 0px 5px 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 227px;
+    padding-right: 227px;
+    border-radius: 6px;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    width: 50%;
+}
+.App9 .container1 h3{
+    margin-left: -164px;
+    /* margin-top: -18px; */
+    width: 299%;
+    color: orangered;
+}
+.App9 .container1 .first, .second, .third, .fourth{
+    margin-left: -349px;
+    margin-top: 11px;
+    font-size: 20px;
+}
+.second{
+    margin-left: -395px;
+    margin-top: 11px;
+    font-size: 20px;
+}
+.third{
+    margin-left: -415px;
+    margin-top: 11px;
+    font-size: 20px;
+}
+.fourth{
+    margin-left: -325px;
+    margin-top: 11px;
+    font-size: 20px;
+}
+.App9 button#exit_quiz{
+    margin-left: 93%;
+    margin-top: 364px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid;
+    color: #000000;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+}
+.App9 button#exit_quiz:hover{
+    border: 2px solid red;
+    color: red;   
+}
+.App9 button#submit{
+    margin-left: 245px;
+    padding: 5px;
+    padding-left: 23px;
+    padding-right: 23px;
+    background: none;
+    color: #000;
+    outline: none;
+    border: 2px solid;
+}
+.App9 button#submit:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+/* App10 */
+.App10{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;
+}
+.App10.pub{
+    display: block;
+}
+.App10 .music-container{
+    border-radius: 25px;
+    width: 19%;
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 94%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 5px #cdcdcd;
+}
+.App10 h1{
+    margin-bottom: -233px;
+}
+.App10 h3{
+    margin-top: 145px;
+    color: orangered;
+}
+.App10 img{
+    object-fit: cover;
+    width: 116px;
+    height: 115px;
+    border-radius: 50%;
+    margin-top: -95px;
+    box-shadow: 0px 10px 5px #cdcdcd;
+}
+.rotate{
+    animation: rotate linear 3s infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.App10 .btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -91px;
+    margin-left: 37px;
+}
+.App10 .btns i{
+    margin-right: 30px;
+    filter: drop-shadow(0px 10px 5px #cdcdcd);
+}
+.App10 .btns i.fa-play{
+    font-size: 24px;
+}
+.App10 .btns i.fa-play:hover{
+    color: #fff;
+    filter: drop-shadow(0px 5px 5px #000);
+}
+
+/* Simple */
+.main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+.main-div.popup{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.main-div img{
+    height: 149px;
+    width: 163px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-left: -5px;
+    margin-top: -6px;
+    object-fit: cover;
+}
+.main-div .btns-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-div .first-pr, .second-pr, .third-pr, .fourth-pr, .fifth-pr, .sixth-pr, .seven-pr, .eight-pr, .nine-pr, .ten-pr{
+    border: 2px solid;
+    width: 13%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 16px;
+}
+.main-div h3{
+    color: rebeccapurple;
+}
+.main-div button.viewer{
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}
+.main-div button.viewer:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.main-div button.dil{
+    border: none;
+    background-color: transparent;
+    color: rgb(46, 39, 39);
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    font-size: 17px;
+}
+.main-div button.dil.color{
+    color: orangered;
+}
+
+.main-div .one .endth{
+    color: red;
+    padding: 5px;
+    padding-left: 31px;
+    padding-right: 32px;
+    margin-left: 92.7%;
+    border: 2px solid;
+    background: none;
+    border-radius: 4px;
+}
+
+/* first pr */
+.one{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;
+}
+.one.o{
+    display: block;
+}
+.one h1{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera   12+, Safari 7+ */
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+}
+.one h1 span{
+    margin-left: 6px;
+    color: #000;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+.one .bdy{
+    margin-top: 25px;
+    height: 50vh;
+    width: 45vw;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-radius: 8px;
+    margin-left: 26%;
+    position: relative;
+}
+.one .bdy .ranger{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 60px;
+    border-radius: 4px;
+}
+.one .bdy .ranger #text{
+    padding: 15px;
+    background: #000;
+    border-radius: 2px;
+    color: #fff;
+    /* height: 3vh; */
+    margin-left: 12px;
+}
+/* second-pr */
+.secer{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;
+}
+.secer.ss{
+    display: block;
+}
+.secer h1{
+    background: #ee9ca7;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+}
+.secer h1 span{
+    color: orangered;
+    font-size: 45px;
+}
+.secer .divOp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #8395a7;
+    padding: 50px;
+    padding-left:100px;
+    padding-right:100px;
+    border-radius: 5px;
+    background: #1dd1a1;
+    font-size: 26px;
+}
+.secer .divOp:hover{
+    border: 2px solid orange;
+    background: none;
+    color: orange;
+}
+.secer button.new_boltee{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid orange;
+    padding: 4px;
+    padding-left: 59px;
+    padding-right: 59px;
+    border-radius: 5px;
+    background: none;
+    font-size: 26px;
+    color: orange;
+}
+/* third-pr */
+.three{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;   
+}
+.three.tab{
+    display: block;
+}
+.three h1{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff6b6b;
+    color: #fff;
+}
+.three h1 span{
+    margin-left: 3px;
+    color: #1dd1a1;
+}
+.three .toggle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 4px;
+    background: #c8d6e5;
+}
+.three .toggle p{
+    font-size: 24px;
+}
+/* Fourth */
+.four{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;   
+}
+.four.fanb{
+    display: block;
+}
+.four h2{
+    padding: 8px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.four h2 span{
+    background: #fff;
+    padding: 3px;
+    color: orange;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.four .cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont .dynamic-txt{
+    overflow: hidden;
+}
+.four .cont li{
+    list-style: none;
+    font-size: 25px;
+    margin-left: 6px;
+    color: #000;
+}
+.four .cont li span{
+    position: relative;
+}
+.four .cont li span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    left: 0%;
+    border-right: 2px solid #000;
+    background: #fff;
+    animation: type 2s linear infinite;
+}
+@keyframes type {
+    100%{
+        left: 100%;
+    }
+}
+/* Fifth */
+.five{
+    background: #34495e;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;     
+}
+.five.fabulous{
+    display: block;
+}
+.content button#location{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+}
+.content button#location:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+/* Sixth */
+.six{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;     
+}
+.six.sexy_boltee{
+    display: block;
+}
+.six .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    background: pink;
+    border-radius: 5px;
+}
+.six .inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.six input{
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 3px;
+    background: none;
+    padding-left: 26px;
+    border: 2px solid;
+}
+.six input:focus{
+    border: 2px solid rebeccapurple;
+}
+.six .number{
+    border-left: 2px solid;
+    padding: 3px;
+    border-radius: 5%;
+    color: grey;
+}
+.six i{
+    position: absolute;
+    width: 135px;
+    text-align: center;
+    margin-left: -46%;
+    color: grey;
+}
+.six .number{
+    position: absolute;
+    margin-left: 175px;
+}
+.six input:focus ~ .number{
+    color: blueviolet;
+    border-color: blueviolet;
+}
+.six input:focus ~ i{
+    color: rebeccapurple;
+}
+.six input::placeholder{
+    color: grey;
+}
+/* Seventh */
+.seven{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;     
+}
+.seven.sexier{
+    display: block;
+}
+.seven .form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #679fa3;
+    height: 65vh;
+    width: 24vw;
+    border-radius: 5px;
+}
+.form-container.hides{
+    display: none;
+}
+.seven .form-container h2{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+}
+.seven .form-container h2 span{
+    background: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    color: orange;
+    margin-left: 5px;
+}
+.seven .user,
+.seven .passWord{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seven input#user,
+.seven input#passWord{
+    width: 89%;
+    padding: 6px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-top: 23px;
+    padding-left: 28px;
+    outline: none;
+}
+.seven .user i{
+    position: absolute;
+    margin-left: -245px;
+    margin-top: 21px;
+    color: grey;
+}
+.seven button.log{
+    margin-left: 23px;
+    margin-top: 26px;
+    width: 85%;
+    padding: 8px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid black;
+    font-size: 17px;
+    background: none;
+    cursor: pointer;
+}
+.seven .passWord i{
+    position: absolute;
+    margin-left: -245px;
+    margin-top: -23px;
+    color: grey;
+}
+.seven .passWord i#eye{
+    position: absolute;
+    margin-right: -483px;
+    margin-top: -23px;
+    color: grey;
+}
+/* Viewer */
+.seven .passWord i#eye.hide:before{
+    content: '\f070';
+}
+.seven button.log:hover{
+    border: 2px solid blueviolet;
+    color: #fff;
+    background: blueviolet;
+}
+.seven input#passWord{
+    margin-top: -21px;
+}
+.seven input#user:focus,
+.seven input#passWord:focus{
+    border: 2px solid orange;
+}
+input#user:focus ~ i,
+.seven input#passWord:focus ~ i{
+    color: orange;
+}
+.seven button.frgt{
+    margin-left: 18px;
+    margin-top: 14px;
+    display: inline-block;
+    background: none;
+    outline: none;
+    border: none;
+    color: blueviolet;
+    cursor: pointer;
+    font-size: 16px;
+}
+.seven button.frgt:hover{
+    color: red;
+}
+.seven button.sign_boltee{
+    background: none;
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.seven button.sign_boltee:hover{
+    background: #fff;
+    color: blueviolet;
+}
+.sign-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #679fa3;
+    height: 67vh;
+    width: 33vw;
+    border-radius: 5px;
+    display: none;
+}
+.seven .sign-container h2{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+}
+.seven .sign-container h2 span{
+    background: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    color: orange;
+    margin-left: 5px;
+}
+.seven .sign-container .sign-user,
+.seven .sign-container .sign-email,
+.seven .sign-container .sign-pass,
+.seven .sign-container .sign-confirm-pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seven input#sign_user,
+.seven input#sign_email,
+.seven input#sign_pass,
+.seven input#sign_confirm_pass{
+    width: 89%;
+    padding: 6px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-top: 23px;
+    padding-left: 28px;
+    outline: none;
+}
+.seven .sign-user i,
+.seven .sign-email i,
+.seven .sign-pass i,
+.seven .sign-confirm-pass i{
+    position: absolute;
+    margin-left: -344px;
+    margin-top: 21px;
+    color: grey;
+}
+.seven button.logUp{
+    margin-left: 87px;
+    margin-top: 26px;
+    width: 62%;
+    padding: 8px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid black;
+    font-size: 17px;
+    background: none;
+    cursor: pointer;
+}
+.seven button.logUp:hover{
+    border: 2px solid orange;
+    color: #fff;
+    background: orange;
+}
+
+/* Validation */
+
+/* Eight */
+.eight{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;     
+}
+.eight.ate{
+    display: block;
+}
+.eight h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #ff6b6b;
+    color: #fff;
+}
+.eight h1 span{
+    margin-left: 4px;
+    background: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    color: #ff6b6b;
+}
+.eight .clip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.eight .clip textarea{
+    resize: none;
+    color: orange;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 4px;
+    padding: 8px;
+}
+.eight .clip textarea:focus{
+    border: 2px solid orange;
+    outline: navajowhite;
+}
+.eight .clip button#copy{
+    display: block;
+    margin-left: 46px;
+    width: 58%;
+    border: 2px solid;
+    background: none;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.eight .clip button#copy:hover{
+    border: 2px solid rebeccapurple;
+    color: rebeccapurple;
+}
+/* Nine */
+.nine{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative;     
+}
+.nine.ninu{
+    display: block;
+}
+.nine h1{
+    background: #1dd1a1;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 2px;
+}
+.nine h1 span{
+    background: #fff;
+    color: #1dd1a1;
+    padding: 3px;
+    margin-left: 6px;
+    border-radius: 4px;
+}
+.nine .icon-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nine .button_icon{
+    margin-right: 20px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background: #1dd1a1;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.nine .button_icon .icon{
+    display: inline-block;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 21px;
+    transition: all 0.3s ease-out;
+}
+.nine .button_icon span{
+    line-height: 50%;
+}
+.nine .button_icon .icon i{
+    margin-left: 15px;
+}
+.nine .button_icon:hover{
+    width: 200px;
+}
+/* Ten */
+.ten{
+    background: #fff;
+    height: 69.4vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 23px;
+    border-radius: 3px;
+    display: none;
+    position: relative; 
+}
+.ten.tentative{
+    display: block;
+}
+.ten h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: aliceblue;
+    color: lawngreen;
+}
+.ten h1 span{
+    margin-right: 7px;
+    background: #000;
+    border-radius: 9px;
+    color: #fff;
+    padding: 6px;
+}
+.ten .password_valid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fc5c65;
+    padding: 50px;
+    border-radius: 9px;
+}
+.ten .password_valid button{
+    display: block;
+    margin-top: 13px;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid #000;
+    background: none;
+}
+.ten .password_valid button:hover{
+    border: 2px solid #fff;
+    background: #fc5c65;
+    color: #fff;
+}
+.ten .password_valid input{
+    border: 2px solid;
+    border-radius: 2px;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding: 4px;
+}
+.ten .password_valid input:focus{
+    border: 2px solid orange;
+}
+.ten .password_valid input::placeholder{
+    font-size: 13px;
+}
+.ten .password_valid label{
+    color: #fff;
+}

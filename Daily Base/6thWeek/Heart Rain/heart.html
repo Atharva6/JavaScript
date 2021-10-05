@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heart{
+            animation: fall 3s linear forwards;
+            margin-left: 50%;
+            top: -1vh;
+            transform: translateY(0);
+        }
+        @keyframes fall{
+            to{
+                transform: translateY(105vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+
+    </div>
+<script>
+    function createHeart(){
+        let heart = document.createElement('div');
+
+        heart.classList.add('heart');
+
+        heart.innerText = "❤️";
+
+        heart.style.left = Math.random() * 100 + 'vw';
+        
+        document.body.appendChild(heart);
+    }
+
+    setInterval(createHeart, 1000)
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+.container{
+    background: #778beb;
+    height: 100vh;
+    position: relative;
+}
+.form{
+    position: absolute;
+    background: #fff;
+    height: 70vh;
+    width: 34vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    display: none;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form h1{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 400;
+}
+form{
+    margin-left: 33px;
+    margin-top: 28px;
+}
+.Email{
+    margin-bottom: 18px;
+}
+.Email input,
+.Password input{
+    margin-top: 5px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid grey;
+    padding-left: 8px;
+    outline: none;
+}
+.Email input:focus,
+.Password input:focus{
+    border: 2px solid #3dc1d3;
+}
+span.Frgt a{
+    text-decoration: none;
+    margin-left: 32px;
+    margin-top: 11px;
+    display: inline-block;
+    color: #45aaf2;
+}
+.button{
+    height: 10vh;
+    height: ma;
+    width: 84%;
+    background-color: #81ecec;
+    border-radius: 4px;
+    margin-left: 31px;
+    margin-top: 40px;
+}
+.button button{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
+}
+span#icon-text{
+    display: inline-block;
+    margin-left: 378px;
+    margin-top: 9px;
+    font-size: 18px;
+    background: none;
+    border: none;
+}
+button#cross{
+    background: none;
+    border: none;
+}
+span#icon-text:hover{
+    color: #81ecec;
+}
+.view button{
+    font-size: 25px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    border: 2px solid black;
+    outline: none;
+    color: blueviolet;
+}
+.view button:hover{
+    border: 2px solid orange;
+    color: orange;
+}
+.form.active{
+    display: block;
+}

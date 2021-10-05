@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background Color Multiple Times</title>
+    <style>
+        .btn{
+            background-color: orangered;
+            color: #fff;
+            padding: 10px 10px;
+            border: none;
+            margin-left: 50px;
+            border-radius: 12px;
+        }
+        .content{
+            margin-top: -56px;
+            margin-left: 391px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Changing Background Color: </h1>
+        <div class="content">
+            <button id="red" class="btn" onclick="Red()">
+                RED
+            </button>
+            <button id="Blue" class="btn" onclick="blue()">
+                BLUE
+            </button>
+            <button id="Black" class="btn" onclick="black()">
+                BLACK
+            </button>
+            <button id="pink" class="btn" onclick="Pink()">
+                PINK
+            </button>
+        </div>
+    </div>
+    <script>
+        let red = document.getElementById('red').addEventListener('click', 'Red');
+        let Blue = document.getElementById('Blue').addEventListener('click', 'blue');
+        let Black = document.getElementById('Black').addEventListener('click','black')
+        let pink = document.getElementById('pink').addEventListener('click', 'Pink');
+
+        function Red(){
+            document.body.style.backgroundColor = "red";
+        }
+        function blue(){
+            document.body.style.backgroundColor = "blue";
+        }
+        function black(){
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+        function Pink(){
+            document.body.style.backgroundColor = "Pink";
+        }
+    </script>
+</body>
+</html>

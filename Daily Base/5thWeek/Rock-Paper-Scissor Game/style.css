@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Marvel', sans-serif;
+}
+.container{
+    background: #222f3e;
+    height: 100vh;
+    position: relative;
+}
+.users{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    color: #fff;
+    font-size: 28px;
+}
+.users .playerS span.no{
+    padding-left: 35px;
+    padding-top: 5px;
+    display: block;
+}
+.users .computerS span.no{
+    padding-left: 60px;
+    padding-top: 5px;
+    display: block;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 65vh;
+}
+.main.active{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.main h1{
+    font-size: 68px;
+    color: #fff;
+}
+button{
+    padding: 10px;
+    padding-left: 29px;
+    padding-right: 29px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+.hover{
+    display: none;
+}
+.hover.active{
+    display: block;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.PlayerHand img{
+    transform: rotateY(180deg);
+}
+.hands{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hover h2{
+    text-align: center;
+    font-size: 54px;
+    color: #fff;
+}

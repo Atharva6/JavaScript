@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.container{
+    height: 100vh;
+    background: #d53369;
+    position: relative;
+    display: flex;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    font-size: 30px;
+    margin-left: 24px;
+}
+.top h1 span{
+    color: #fff;
+}
+.top i{
+    color: #fff;
+    font-size: 35px;
+}
+.form{
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding-right: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -7px;
+}
+.form input{
+    width: 250%;
+    padding: 8px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid black;
+}
+.form label{
+    color: #fff;
+}
+.form input#sub{
+    background: blue;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+}
+.output{
+    margin-left: 534px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 275px;
+    margin-bottom: 250px;
+    border-radius: 10px;
+    padding: 28px;
+    padding-left: 45px;
+    padding-right: 46px;
+}
+.content{
+    display: flex;
+}
+.content h3{
+    margin-right: 47px;
+}
+.cont{
+    margin-top: 12px;
+    color: orangered;
+}
+.cont p.head{
+    margin-left: 19px;
+}
+.cont p.h{
+    margin-left: 11px;
+}
+.cont p{
+    margin-right: 45px;
+}
+.cont{
+    display: flex;
+}
+.OP{
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    margin-left: -15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button#deleteBtn{
+    padding: 9px;
+    padding-top: -7px;
+    background: orangered;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-left: 15px;
+}
